@@ -1,14 +1,14 @@
 plugins {
     java
-    id("xyz.jpenilla.run-paper") version "2.1.0" // test plugin from your IDE using project server
+    id("xyz.jpenilla.run-paper") version "2.1.0"
 }
 
-group = "io.papermc"
-version = "1.0.0"
-description = "Example plugin using PaperMC software"
+group = "shateq.bukkit"
+version = "1.0.0-SNAPSHOT"
+description = "Go uphill on ice. Slide your boat as Polish as possible on your Minecraft server. Category: fun"
 
 base {
-    archivesName.set("example-plugin-paper-only")
+    archivesName.set("polish-boat-driving-bukkit")
 }
 
 repositories {
@@ -18,36 +18,31 @@ repositories {
 
 dependencies {
     compileOnly("io.papermc.paper:paper-api:1.20-R0.1-SNAPSHOT")
-    implementation("org.bstats:bstats-bukkit:3.0.1") // bStats - as you like it
 }
 
 java {
     toolchain.languageVersion.set(JavaLanguageVersion.of(17))
-    // withSourcesJar()
 }
 
 tasks {
-    assemble {
-        dependsOn(clean)
-    }
     compileJava {
         options.encoding = Charsets.UTF_8.name()
     }
-
+    runServer {
+        minecraftVersion("1.20")
+    }
     processResources {
         filteringCharset = Charsets.UTF_8.name()
         // Token replacing
         val props = mapOf(
             "version" to version,
-            "desc" to project.description,
-            "apiVersion" to "1.20"
+            "desc" to project.description
         )
         inputs.properties(props)
         filesMatching("plugin.yml") {
             expand(props)
         }
     }
-
     jar {
         from("LICENSE") {
             rename { "LICENSE_${rootProject.name}" }

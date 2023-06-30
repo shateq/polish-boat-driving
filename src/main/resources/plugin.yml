@@ -1,13 +1,8 @@
-name: ExamplePlugin
+name: PolishBoatDriving
 version: ${version}
-main: io.papermc.exampleplugin.ExamplePlugin
-api-version: ${apiVersion}
-prefix: Example Plugin
-authors: [ Me ]
+main: shateq.bukkit.polishboat.PolishBoatDriving
+api-version: 1.19
+prefix: PBD
+authors: [ Shateq ]
 description: ${desc}
-website: https://docs.papermc.io/paper/dev/getting-started
-commands:
-  hello:
-    description: Say hi!
-    usage: /<command>
-    aliases: ["ciao", "priviet"]
+website: https://modrinth.com/mod/polish-boat-driving

@@ -5,7 +5,7 @@
 build/
 out/
 classes/
-run/
+run
 
 # eclipse
 eclipse

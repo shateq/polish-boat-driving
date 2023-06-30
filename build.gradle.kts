@@ -5,7 +5,7 @@ plugins {
 
 group = "shateq.bukkit"
 version = "1.0.0-SNAPSHOT"
-description = "Go uphill on ice. Slide your boat as Polish as possible on your Minecraft server. Category: fun"
+description = "Go uphill on ice. Slide your boat as Polish as possible on your Minecraft server."
 
 base {
     archivesName.set("polish-boat-driving-bukkit")

@@ -56,7 +56,7 @@ public class PolishBoatDriving extends JavaPlugin implements Listener {
             Bukkit.getScheduler().runTaskLater(this, () -> {
                 for (Entity entity : pass) boat.addPassenger(entity);
                 timeout.remove(p.getUniqueId());
-            }, 6);
+            }, 4);
         }
     }
 }

@@ -15,7 +15,7 @@ youtube link
 # Download it
 
 - [Modrinth](https://modrinth.com/plugin/polish-boat-driving/)
-- [Spigor](https://www.spigotmc.org/resources/polish-boat-driving.110882/)
+- [Hangar](https://hangar.papermc.io/shateq/PolishBoatDriving)
 
 ## License
 

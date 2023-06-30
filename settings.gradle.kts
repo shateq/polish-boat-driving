@@ -1,1 +1,1 @@
-rootProject.name = "Renczny"
+rootProject.name = "PolishBoatDriving"

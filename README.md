@@ -1,4 +1,4 @@
-<img src="gallery/logo.png" width="250" alt="Logo with boat and sunset.">
+<img src="gallery/logo.png" width="256" alt="Logo with boat and sunset.">
 
 # Polish Boat Driving
 
@@ -15,7 +15,7 @@ youtube link
 # Download it
 
 - [Modrinth](https://modrinth.com/plugin/polish-boat-driving/)
-- [Spigot]()
+- [Spigor](https://www.spigotmc.org/resources/polish-boat-driving.110882/)
 
 ## License
 
